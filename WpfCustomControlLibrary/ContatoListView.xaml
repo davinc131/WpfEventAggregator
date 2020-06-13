@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="WpfCustomControlLibrary.ContatoListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfCustomControlLibrary"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" Width="450" Loaded="UserControl_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.12*"/>
+            <RowDefinition Height="0.45*"/>
+            <RowDefinition Height="0.12*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnNovo" Content="Novo" Margin="0" Width="74" VerticalAlignment="Center" FontSize="14" FontFamily="Global User Interface" Click="btnNovo_Click"/>
+        <Button x:Name="btnSalvar" Content="Salvar" Grid.Column="1" Margin="0" Width="75" VerticalAlignment="Center" FontSize="14" FontFamily="Global User Interface" Click="btnSalvar_Click"/>
+        <Button x:Name="btnAlterar" Content="Alterar" Grid.Column="2" Margin="0" Width="75" VerticalAlignment="Center" FontSize="14" FontFamily="Global User Interface" Click="btnAlterar_Click"/>
+        <StackPanel Margin="5" Grid.Row="1" Grid.ColumnSpan="3">
+            <StackPanel Margin="10,5" Orientation="Horizontal">
+                <Label Content="Nome: " Margin="5" FontSize="14" FontFamily="Global User Interface"/>
+                <TextBox x:Name="txtNomeContato" Height="24" TextWrapping="Wrap" Width="345" Margin="5"/>
+            </StackPanel>
+            <StackPanel Height="35" Margin="10,5" Orientation="Horizontal">
+                <Label Content="Número: " Margin="5" FontSize="14" FontFamily="Global User Interface"/>
+                <TextBox x:Name="txtNumeroContato" TextWrapping="Wrap" Width="345" Margin="5"/>
+            </StackPanel>
+        </StackPanel>
+        <Label Content="Nome" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0" Grid.Row="2" Grid.ColumnSpan="2" Width="280" FontSize="14" Background="White" FontFamily="Global User Interface"/>
+        <Label Content="Número" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,10,0" Grid.Row="2" FontSize="14" Background="White" Grid.Column="2" FontFamily="Global User Interface"/>
+        <ListView x:Name="contatoList" Height="234" Margin="0" Grid.Row="3" Width="430" Grid.ColumnSpan="3" SelectionChanged="ListView_SelectionChanged">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ShowGridLines="True">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.6*"/>
+                            <ColumnDefinition Width="0.4*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Margin="1"  Grid.Column="0" Text="{Binding NomeContato}" />
+                        <TextBlock Margin="5" Grid.Column="1" Text="{Binding NumeroContato}" />
+
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </Grid>
+</UserControl>

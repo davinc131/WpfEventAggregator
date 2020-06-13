@@ -1,0 +1,6 @@
+C:\Users\Leonardo\source\repos\WpfEventAggregator\EventAggregator\bin\Debug\EventAggregator.dll
+C:\Users\Leonardo\source\repos\WpfEventAggregator\EventAggregator\bin\Debug\EventAggregator.pdb
+C:\Users\Leonardo\source\repos\WpfEventAggregator\EventAggregator\obj\Debug\EventAggregator.csprojAssemblyReference.cache
+C:\Users\Leonardo\source\repos\WpfEventAggregator\EventAggregator\obj\Debug\EventAggregator.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\source\repos\WpfEventAggregator\EventAggregator\obj\Debug\EventAggregator.dll
+C:\Users\Leonardo\source\repos\WpfEventAggregator\EventAggregator\obj\Debug\EventAggregator.pdb
