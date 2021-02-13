@@ -34,8 +34,8 @@ namespace WpfAppEventAggregator
 
             var tabs = this.ContatoView.Items;
 
-            tabs.Add(new TabItem() { Header = "Nome Contato", Content = new ContatoView(this.ea) });
-            tabs.Add(new TabItem() { Header = "Número Contato", Content = new ContatoDatailsView(this.ea) });
+            tabs.Add(new TabItem() { Header = "Nome Contato", Content = new ContatoDatailsViewNome(this.ea) });
+            tabs.Add(new TabItem() { Header = "Número Contato", Content = new ContatoDetailsViewNumero(this.ea) });
         }
     }
 }

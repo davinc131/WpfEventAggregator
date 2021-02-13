@@ -4,3 +4,8 @@ C:\Users\Leonardo\source\repos\WpfEventAggregator\Model\obj\Debug\Model.csprojAs
 C:\Users\Leonardo\source\repos\WpfEventAggregator\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\Leonardo\source\repos\WpfEventAggregator\Model\obj\Debug\Model.dll
 C:\Users\Leonardo\source\repos\WpfEventAggregator\Model\obj\Debug\Model.pdb
+C:\Users\davin\source\repos\EventAggregator\WpfEventAggregator\Model\bin\Debug\Model.dll
+C:\Users\davin\source\repos\EventAggregator\WpfEventAggregator\Model\bin\Debug\Model.pdb
+C:\Users\davin\source\repos\EventAggregator\WpfEventAggregator\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\davin\source\repos\EventAggregator\WpfEventAggregator\Model\obj\Debug\Model.dll
+C:\Users\davin\source\repos\EventAggregator\WpfEventAggregator\Model\obj\Debug\Model.pdb

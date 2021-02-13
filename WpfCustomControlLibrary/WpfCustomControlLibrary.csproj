@@ -48,7 +48,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="ContatoDatailsView.xaml">
+    <Page Include="ContatoDatailsViewNome.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -56,7 +56,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ContatoView.xaml">
+    <Page Include="ContatoDetailsViewNumero.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -66,14 +66,14 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContatoDatailsView.xaml.cs">
-      <DependentUpon>ContatoDatailsView.xaml</DependentUpon>
+    <Compile Include="ContatoDatailsViewNome.xaml.cs">
+      <DependentUpon>ContatoDatailsViewNome.xaml</DependentUpon>
     </Compile>
     <Compile Include="ContatoListView.xaml.cs">
       <DependentUpon>ContatoListView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ContatoView.xaml.cs">
-      <DependentUpon>ContatoView.xaml</DependentUpon>
+    <Compile Include="ContatoDetailsViewNumero.xaml.cs">
+      <DependentUpon>ContatoDetailsViewNumero.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomControl1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">

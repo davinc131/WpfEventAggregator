@@ -4,17 +4,17 @@
 library
 C#
 .cs
-C:\Users\Leonardo\source\repos\WpfEventAggregator\WpfCustomControlLibrary\obj\Debug\
+C:\Users\davin\source\repos\EventAggregator\WpfEventAggregator\WpfCustomControlLibrary\obj\Debug\
 WpfCustomControlLibrary
 none
 false
 DEBUG;TRACE
 
-4-2115939385
+41236588317
 
-8771756868
-151525722495
-ContatoDatailsView.xaml;ContatoListView.xaml;ContatoView.xaml;Themes\Generic.xaml;
+8207237420
+15-378073937
+ContatoDatailsViewNome.xaml;ContatoListView.xaml;ContatoDetailsViewNumero.xaml;Themes\Generic.xaml;
 
 False
 

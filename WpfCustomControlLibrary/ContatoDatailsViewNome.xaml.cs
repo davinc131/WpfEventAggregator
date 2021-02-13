@@ -17,47 +17,47 @@ using EventAggregator;
 using Model;
 using Model.Events;
 
+
 namespace WpfCustomControlLibrary
 {
     /// <summary>
-    /// Interação lógica para ContatoView.xam
+    /// Interação lógica para ContatoDatailsView.xam
     /// </summary>
-    public partial class ContatoView : UserControl, ISubscriber<ContatoSaved>, ISubscriber<ContatoSelected>, ISubscriber<ContatoCreated>, ISubscriber<ContatoUpdate>
+    public partial class ContatoDatailsViewNome : UserControl, ISubscriber<ContatoSaved>, ISubscriber<ContatoSelected>, ISubscriber<ContatoCreated>, ISubscriber<ContatoUpdate>
     {
-        public ContatoView(IEventAggregator ea)
+        public ContatoDatailsViewNome(IEventAggregator ea)
         {
             InitializeComponent();
             ea.SubscribeEvent(this);
         }
 
-
-
-        #region Created
-        public void OnEventHandler(ContatoCreated e)
-        {
-            this.lbView.Content = string.Format("Contato Criado Número {0}", e.Contato.NumeroContato);
-        }
-        #endregion
-
         #region Saved
         public void OnEventHandler(ContatoSaved e)
         {
-            this.lbView.Content = string.Format("Contato Salvo Número {0}", e.Contato.NumeroContato);
+            this.lbDetail.Content = string.Format("Contato Salvo {0}", e.Contato.NomeContato);
         }
         #endregion
 
         #region Selected
         public void OnEventHandler(ContatoSelected e)
         {
-            this.lbView.Content = string.Format("Contato Selecionado Número {0}", e.Contato.NumeroContato);
+            this.lbDetail.Content = string.Format("Contato Selecionado {0}", e.Contato.NomeContato);
+        }
+        #endregion
+
+        #region Created
+        public void OnEventHandler(ContatoCreated e)
+        {
+            this.lbDetail.Content = string.Format("Contato Criado {0}", e.Contato.NomeContato);
         }
         #endregion
 
         #region Remove
         public void OnEventHandler(ContatoUpdate e)
         {
-            this.lbView.Content = string.Format("Contato Alterado Número {0}", e.Contato.NumeroContato);
+            this.lbDetail.Content = string.Format("Contato Alterado {0}", e.Contato.NomeContato);
         }
         #endregion
+
     }
 }
